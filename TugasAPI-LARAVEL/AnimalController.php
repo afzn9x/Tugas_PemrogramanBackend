@@ -19,9 +19,8 @@ class AnimalController extends Controller
         };
     }
 
-    function getID(Request $id) {
-        $data = $this->animal[$id];
-        echo 'Data Animal Berdasarkan ID : '. $data;
+    function getID($id) {
+        echo 'Data Animal Berdasarkan ID : '. $this->animals[$id];
 
     }
 
